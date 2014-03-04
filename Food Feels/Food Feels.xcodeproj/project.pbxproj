@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F160F7F18C6788200F6FB29 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F160F7E18C6788200F6FB29 /* main.storyboard */; };
+		0F160F8218C68A8E00F6FB29 /* ZAMealsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F160F8118C68A8E00F6FB29 /* ZAMealsVC.m */; };
+		0F160F8518C68AA200F6FB29 /* ZAFoodsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F160F8418C68AA200F6FB29 /* ZAFoodsVC.m */; };
+		0F160F8818C68AB300F6FB29 /* ZAFeelingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F160F8718C68AB300F6FB29 /* ZAFeelingsVC.m */; };
 		0F2E1B6218C67155000D7A52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6118C67155000D7A52 /* Foundation.framework */; };
 		0F2E1B6418C67155000D7A52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6318C67155000D7A52 /* CoreGraphics.framework */; };
 		0F2E1B6618C67155000D7A52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6518C67155000D7A52 /* UIKit.framework */; };
@@ -41,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		0F160F7E18C6788200F6FB29 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = "Food Feels/main.storyboard"; sourceTree = SOURCE_ROOT; };
+		0F160F8018C68A8E00F6FB29 /* ZAMealsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAMealsVC.h; sourceTree = "<group>"; };
+		0F160F8118C68A8E00F6FB29 /* ZAMealsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAMealsVC.m; sourceTree = "<group>"; };
+		0F160F8318C68AA200F6FB29 /* ZAFoodsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFoodsVC.h; sourceTree = "<group>"; };
+		0F160F8418C68AA200F6FB29 /* ZAFoodsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFoodsVC.m; sourceTree = "<group>"; };
+		0F160F8618C68AB300F6FB29 /* ZAFeelingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFeelingsVC.h; sourceTree = "<group>"; };
+		0F160F8718C68AB300F6FB29 /* ZAFeelingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFeelingsVC.m; sourceTree = "<group>"; };
 		0F2E1B5E18C67155000D7A52 /* Food Feels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Feels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2E1B6118C67155000D7A52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F2E1B6318C67155000D7A52 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +183,12 @@
 		0F2E1B9618C6736E000D7A52 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0F160F8018C68A8E00F6FB29 /* ZAMealsVC.h */,
+				0F160F8118C68A8E00F6FB29 /* ZAMealsVC.m */,
+				0F160F8318C68AA200F6FB29 /* ZAFoodsVC.h */,
+				0F160F8418C68AA200F6FB29 /* ZAFoodsVC.m */,
+				0F160F8618C68AB300F6FB29 /* ZAFeelingsVC.h */,
+				0F160F8718C68AB300F6FB29 /* ZAFeelingsVC.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -301,6 +316,9 @@
 				0F2E1B7718C67155000D7A52 /* Food_Feels.xcdatamodeld in Sources */,
 				0F2E1BAE18C6756E000D7A52 /* Food.m in Sources */,
 				0F2E1B7018C67155000D7A52 /* main.m in Sources */,
+				0F160F8818C68AB300F6FB29 /* ZAFeelingsVC.m in Sources */,
+				0F160F8518C68AA200F6FB29 /* ZAFoodsVC.m in Sources */,
+				0F160F8218C68A8E00F6FB29 /* ZAMealsVC.m in Sources */,
 				0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */,
 				0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */,
 				0F2E1B7418C67155000D7A52 /* ZAAppDelegate.m in Sources */,
