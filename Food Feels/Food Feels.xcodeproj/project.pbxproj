@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F160F7F18C6788200F6FB29 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F160F7E18C6788200F6FB29 /* main.storyboard */; };
 		0F2E1B6218C67155000D7A52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6118C67155000D7A52 /* Foundation.framework */; };
 		0F2E1B6418C67155000D7A52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6318C67155000D7A52 /* CoreGraphics.framework */; };
 		0F2E1B6618C67155000D7A52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6518C67155000D7A52 /* UIKit.framework */; };
@@ -22,6 +23,10 @@
 		0F2E1B8318C67155000D7A52 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E1B6718C67155000D7A52 /* CoreData.framework */; };
 		0F2E1B8B18C67155000D7A52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E1B8918C67155000D7A52 /* InfoPlist.strings */; };
 		0F2E1B8D18C67155000D7A52 /* Food_FeelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1B8C18C67155000D7A52 /* Food_FeelsTests.m */; };
+		0F2E1BAE18C6756E000D7A52 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BAD18C6756E000D7A52 /* Food.m */; };
+		0F2E1BB118C6756F000D7A52 /* Feeling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB018C6756E000D7A52 /* Feeling.m */; };
+		0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB318C6756F000D7A52 /* Meal.m */; };
+		0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F160F7E18C6788200F6FB29 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = "Food Feels/main.storyboard"; sourceTree = SOURCE_ROOT; };
 		0F2E1B5E18C67155000D7A52 /* Food Feels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Feels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2E1B6118C67155000D7A52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F2E1B6318C67155000D7A52 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,14 @@
 		0F2E1B8818C67155000D7A52 /* Food FeelsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Food FeelsTests-Info.plist"; sourceTree = "<group>"; };
 		0F2E1B8A18C67155000D7A52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F2E1B8C18C67155000D7A52 /* Food_FeelsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Food_FeelsTests.m; sourceTree = "<group>"; };
+		0F2E1BAC18C6756E000D7A52 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		0F2E1BAD18C6756E000D7A52 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		0F2E1BAF18C6756E000D7A52 /* Feeling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feeling.h; sourceTree = "<group>"; };
+		0F2E1BB018C6756E000D7A52 /* Feeling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feeling.m; sourceTree = "<group>"; };
+		0F2E1BB218C6756F000D7A52 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		0F2E1BB318C6756F000D7A52 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		0F2E1BB518C675BC000D7A52 /* ZAFFDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFFDataStore.h; sourceTree = "<group>"; };
+		0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFFDataStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +129,14 @@
 		0F2E1B6918C67155000D7A52 /* Food Feels */ = {
 			isa = PBXGroup;
 			children = (
+				0F2E1B7518C67155000D7A52 /* Food_Feels.xcdatamodeld */,
 				0F2E1B7218C67155000D7A52 /* ZAAppDelegate.h */,
 				0F2E1B7318C67155000D7A52 /* ZAAppDelegate.m */,
+				0F160F7E18C6788200F6FB29 /* main.storyboard */,
+				0F2E1B9918C67466000D7A52 /* Core Data */,
+				0F2E1B9818C6738D000D7A52 /* Model */,
+				0F2E1B9618C6736E000D7A52 /* View Controllers */,
 				0F2E1B7818C67155000D7A52 /* Images.xcassets */,
-				0F2E1B7518C67155000D7A52 /* Food_Feels.xcdatamodeld */,
 				0F2E1B6A18C67155000D7A52 /* Supporting Files */,
 			);
 			path = "Food Feels";
@@ -151,6 +169,35 @@
 				0F2E1B8918C67155000D7A52 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F2E1B9618C6736E000D7A52 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0F2E1B9818C6738D000D7A52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E1BB518C675BC000D7A52 /* ZAFFDataStore.h */,
+				0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F2E1B9918C67466000D7A52 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E1BB218C6756F000D7A52 /* Meal.h */,
+				0F2E1BB318C6756F000D7A52 /* Meal.m */,
+				0F2E1BAF18C6756E000D7A52 /* Feeling.h */,
+				0F2E1BB018C6756E000D7A52 /* Feeling.m */,
+				0F2E1BAC18C6756E000D7A52 /* Food.h */,
+				0F2E1BAD18C6756E000D7A52 /* Food.m */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F2E1B6E18C67155000D7A52 /* InfoPlist.strings in Resources */,
+				0F160F7F18C6788200F6FB29 /* main.storyboard in Resources */,
 				0F2E1B7918C67155000D7A52 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2E1BB118C6756F000D7A52 /* Feeling.m in Sources */,
 				0F2E1B7718C67155000D7A52 /* Food_Feels.xcdatamodeld in Sources */,
+				0F2E1BAE18C6756E000D7A52 /* Food.m in Sources */,
 				0F2E1B7018C67155000D7A52 /* main.m in Sources */,
+				0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */,
+				0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */,
 				0F2E1B7418C67155000D7A52 /* ZAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +504,7 @@
 				0F2E1B9218C67155000D7A52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F2E1B9318C67155000D7A52 /* Build configuration list for PBXNativeTarget "Food FeelsTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +513,7 @@
 				0F2E1B9518C67155000D7A52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
