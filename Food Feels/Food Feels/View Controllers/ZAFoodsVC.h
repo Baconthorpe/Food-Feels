@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZAFoodsVC : UIViewController
+@interface ZAFoodsVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
