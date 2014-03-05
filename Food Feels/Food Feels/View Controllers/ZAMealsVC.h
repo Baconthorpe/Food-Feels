@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZAMealsVC : UIViewController
+@interface ZAMealsVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

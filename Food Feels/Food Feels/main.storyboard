@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="LUg-1z-YpQ" detailTextLabel="uFA-Yd-vTe" style="IBUITableViewCellStyleValue1" id="bmM-Cb-bXr">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" textLabel="LUg-1z-YpQ" detailTextLabel="uFA-Yd-vTe" style="IBUITableViewCellStyleValue1" id="bmM-Cb-bXr">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bmM-Cb-bXr" id="H0q-Xx-oua">
@@ -51,6 +51,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meals" id="VyS-JX-6H2"/>
+                    <connections>
+                        <outlet property="mealsTable" destination="aNK-Mp-h8e" id="Fzu-J7-Xed"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSo-Zn-djq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,11 +110,19 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POd-n2-TqM">
-                                                    <rect key="frame" x="260" y="2" width="40" height="40"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feels-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="POd-n2-TqM">
+                                                    <rect key="frame" x="270" y="7" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Sd6-my-Sc3"/>
+                                                        <constraint firstAttribute="height" constant="30" id="Uiz-xj-LT0"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="POd-n2-TqM" firstAttribute="leading" secondItem="IoC-3p-gFD" secondAttribute="leading" constant="270" id="A4K-FK-E2a"/>
+                                                <constraint firstAttribute="centerY" secondItem="POd-n2-TqM" secondAttribute="centerY" constant="-0.5" id="c8N-Rv-JDa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,6 +132,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Foods" id="ukR-F8-Ka7"/>
                     <connections>
+                        <outlet property="foodCellView" destination="IoC-3p-gFD" id="u0z-o3-XET"/>
                         <outlet property="foodTable" destination="zjh-Bq-1vl" id="yEw-ek-vqv"/>
                     </connections>
                 </viewController>
@@ -171,6 +183,9 @@
             <point key="canvasLocation" x="701" y="1164"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Feels-01.png" width="208" height="208"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

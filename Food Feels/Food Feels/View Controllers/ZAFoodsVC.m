@@ -11,6 +11,7 @@
 @interface ZAFoodsVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *foodTable;
+@property (weak, nonatomic) IBOutlet UIView *foodCellView;
 
 @end
 
@@ -29,6 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.foodTable.dataSource = self;
+    self.foodTable.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +47,14 @@
 {
     static NSString *CellIdentifier = @"foodCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+//    cell = self.foodCellView;
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Feels-01" ofType:@"png"];
+    
+    UIImage *cellImage = [UIImage imageWithContentsOfFile:filePath];
+    
+    cell.imageView.image = cellImage;
     
     return cell;
 }

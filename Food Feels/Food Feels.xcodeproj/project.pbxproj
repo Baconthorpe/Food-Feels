@@ -30,6 +30,7 @@
 		0F2E1BB118C6756F000D7A52 /* Feeling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB018C6756E000D7A52 /* Feeling.m */; };
 		0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB318C6756F000D7A52 /* Meal.m */; };
 		0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */; };
+		0F39795F18C7A8A000736F11 /* Feels-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F39795E18C7A8A000736F11 /* Feels-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		0F2E1BB318C6756F000D7A52 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
 		0F2E1BB518C675BC000D7A52 /* ZAFFDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFFDataStore.h; sourceTree = "<group>"; };
 		0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFFDataStore.m; sourceTree = "<group>"; };
+		0F39795E18C7A8A000736F11 /* Feels-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feels-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		0F2E1B6918C67155000D7A52 /* Food Feels */ = {
 			isa = PBXGroup;
 			children = (
+				0F39795E18C7A8A000736F11 /* Feels-01.png */,
 				0F2E1B7518C67155000D7A52 /* Food_Feels.xcdatamodeld */,
 				0F2E1B7218C67155000D7A52 /* ZAAppDelegate.h */,
 				0F2E1B7318C67155000D7A52 /* ZAAppDelegate.m */,
@@ -291,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F39795F18C7A8A000736F11 /* Feels-01.png in Resources */,
 				0F2E1B6E18C67155000D7A52 /* InfoPlist.strings in Resources */,
 				0F160F7F18C6788200F6FB29 /* main.storyboard in Resources */,
 				0F2E1B7918C67155000D7A52 /* Images.xcassets in Resources */,
