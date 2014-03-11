@@ -77,7 +77,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVW-9a-hu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="167" y="181"/>
+            <point key="canvasLocation" x="157" y="181"/>
         </scene>
         <!--FoodsVC - Foods-->
         <scene sceneID="xbK-pO-W0d">
@@ -96,7 +96,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" id="2cr-XL-3KY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" id="2cr-XL-3KY" customClass="ZAFoodCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2cr-XL-3KY" id="IoC-3p-gFD">
@@ -104,26 +104,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB6-MA-G62">
-                                                    <rect key="frame" x="20" y="11" width="90" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="192" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feels-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="POd-n2-TqM">
-                                                    <rect key="frame" x="270" y="7" width="30" height="30"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feels-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="POd-n2-TqM">
+                                                    <rect key="frame" x="237" y="4" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="Sd6-my-Sc3"/>
-                                                        <constraint firstAttribute="height" constant="30" id="Uiz-xj-LT0"/>
-                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feels-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="mg5-qe-oYH">
+                                                    <rect key="frame" x="275" y="9" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="POd-n2-TqM" firstAttribute="leading" secondItem="IoC-3p-gFD" secondAttribute="leading" constant="270" id="A4K-FK-E2a"/>
-                                                <constraint firstAttribute="centerY" secondItem="POd-n2-TqM" secondAttribute="centerY" constant="-0.5" id="c8N-Rv-JDa"/>
-                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feelOne" destination="POd-n2-TqM" id="1tv-ih-Sel"/>
+                                            <outlet property="feelTwo" destination="mg5-qe-oYH" id="ji1-7X-4S4"/>
+                                            <outlet property="foodLabel" destination="jB6-MA-G62" id="oMQ-Oy-jF6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

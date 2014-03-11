@@ -121,4 +121,60 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+#pragma mark - Fetch Controllers
+
+- (NSFetchedResultsController *) mealFetchController
+{
+    if (!_mealFetchController)
+    {
+        NSFetchRequest *mealFetch = [[NSFetchRequest alloc] initWithEntityName:@"Meal"];
+        mealFetch.fetchBatchSize = 20;
+        
+        NSSortDescriptor *mealDate = [[NSSortDescriptor alloc] initWithKey:@"occurredAt" ascending:YES];
+        mealFetch.sortDescriptors = @[mealDate];
+        
+        _mealFetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:mealFetch managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"mealResultsCache"];
+        
+        [_mealFetchController performFetch:nil];
+    }
+    
+    return _mealFetchController;
+}
+
+- (NSFetchedResultsController *) feelingFetchController
+{
+    if (!_feelingFetchController)
+    {
+        NSFetchRequest *feelingFetch = [[NSFetchRequest alloc] initWithEntityName:@"Meal"];
+        feelingFetch.fetchBatchSize = 20;
+        
+        NSSortDescriptor *feelingAlphabetical = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+        feelingFetch.sortDescriptors = @[feelingAlphabetical];
+        
+        _feelingFetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:feelingFetch managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"feelingResultsCache"];
+        
+        [_feelingFetchController performFetch:nil];
+    }
+    
+    return _feelingFetchController;
+}
+
+- (NSFetchedResultsController *) foodFetchController
+{
+    if (!_foodFetchController)
+    {
+        NSFetchRequest *foodFetch = [[NSFetchRequest alloc] initWithEntityName:@"Meal"];
+        foodFetch.fetchBatchSize = 20;
+        
+        NSSortDescriptor *foodAlphabetical = [[NSSortDescriptor alloc] initWithKey:@"occurredAt" ascending:YES];
+        foodFetch.sortDescriptors = @[foodAlphabetical];
+        
+        _foodFetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:foodFetch managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"foodResultsCache"];
+        
+        [_foodFetchController performFetch:nil];
+    }
+    
+    return _foodFetchController;
+}
+
 @end

@@ -31,6 +31,7 @@
 		0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB318C6756F000D7A52 /* Meal.m */; };
 		0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */; };
 		0F39795F18C7A8A000736F11 /* Feels-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F39795E18C7A8A000736F11 /* Feels-01.png */; };
+		0FF6C2E518C90FC700AA2F0D /* ZAFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6C2E418C90FC700AA2F0D /* ZAFoodCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		0F2E1BB518C675BC000D7A52 /* ZAFFDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFFDataStore.h; sourceTree = "<group>"; };
 		0F2E1BB618C675BC000D7A52 /* ZAFFDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFFDataStore.m; sourceTree = "<group>"; };
 		0F39795E18C7A8A000736F11 /* Feels-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feels-01.png"; sourceTree = "<group>"; };
+		0FF6C2E318C90FC700AA2F0D /* ZAFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAFoodCell.h; sourceTree = "<group>"; };
+		0FF6C2E418C90FC700AA2F0D /* ZAFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAFoodCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +143,13 @@
 		0F2E1B6918C67155000D7A52 /* Food Feels */ = {
 			isa = PBXGroup;
 			children = (
+				0F160F7E18C6788200F6FB29 /* main.storyboard */,
 				0F39795E18C7A8A000736F11 /* Feels-01.png */,
 				0F2E1B7518C67155000D7A52 /* Food_Feels.xcdatamodeld */,
 				0F2E1B7218C67155000D7A52 /* ZAAppDelegate.h */,
 				0F2E1B7318C67155000D7A52 /* ZAAppDelegate.m */,
-				0F160F7E18C6788200F6FB29 /* main.storyboard */,
+				0FF6C2E318C90FC700AA2F0D /* ZAFoodCell.h */,
+				0FF6C2E418C90FC700AA2F0D /* ZAFoodCell.m */,
 				0F2E1B9918C67466000D7A52 /* Core Data */,
 				0F2E1B9818C6738D000D7A52 /* Model */,
 				0F2E1B9618C6736E000D7A52 /* View Controllers */,
@@ -323,6 +328,7 @@
 				0F160F8818C68AB300F6FB29 /* ZAFeelingsVC.m in Sources */,
 				0F160F8518C68AA200F6FB29 /* ZAFoodsVC.m in Sources */,
 				0F160F8218C68A8E00F6FB29 /* ZAMealsVC.m in Sources */,
+				0FF6C2E518C90FC700AA2F0D /* ZAFoodCell.m in Sources */,
 				0F2E1BB418C6756F000D7A52 /* Meal.m in Sources */,
 				0F2E1BB718C675BC000D7A52 /* ZAFFDataStore.m in Sources */,
 				0F2E1B7418C67155000D7A52 /* ZAAppDelegate.m in Sources */,
