@@ -7,12 +7,15 @@
 //
 
 #import "ZAFoodCell.h"
+#import "Food.h"
 
 @interface ZAFoodCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *foodLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *feelOne;
 @property (weak, nonatomic) IBOutlet UIImageView *feelTwo;
+
+@property (strong, nonatomic) Food *food;
 
 @end
 
@@ -33,6 +36,15 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void) configureWithFood: (Food *)food
+{
+    self.foodLabel.text = self.food.name;
+    
+    NSArray *feelingsByAssociation = [NSArray new];
+    
+    NSPredicate *feelingAssociation = [NSPredicate predicateWithFormat:@""];
 }
 
 @end
